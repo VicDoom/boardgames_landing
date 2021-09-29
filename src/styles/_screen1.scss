@@ -1,0 +1,22 @@
+.screen1 {
+
+  &__title-and-subtitle {
+    padding-bottom: 50px;
+  }
+
+  &__title, &__subtitle, &__button {
+    display: block;
+    text-align: center;
+  }
+
+  &__button {
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    width: 620px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}

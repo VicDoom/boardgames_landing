@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--menu {
+    transform: translateY(-20%);
+    display: flex;
+
+    &-item {
+      transition: .5s;
+      margin-right: 40px;
+      padding: 10px 20px;
+      border-radius: 50px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: var(--color-yellow-dark);
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &-item {
+      &--first {
+        padding: 0;
+      }
+      &--second {
+        padding: 0 0 10px 0;
+        color: var(--color-pink);
+        text-decoration: underline var(--color-pink);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      &--third {
+        padding: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+
+  }
+}

@@ -1,0 +1,45 @@
+.screen4 {
+  text-align: center;
+
+  h1 {
+    padding-bottom: 30px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 30px;
+
+    .card {
+      width: 340px;
+      height: 220px;
+      padding: 55px 55px 0 55px;
+      box-sizing: border-box;
+
+      h3 {
+        padding-bottom: 10px;
+      }
+
+      h5 {
+        width: 230px;
+        margin: auto;
+      }
+
+      &--1 {
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+
+      &--3 {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  &__list {
+    text-align: left;
+    padding: 0 0 30px 45px;
+  }
+}
