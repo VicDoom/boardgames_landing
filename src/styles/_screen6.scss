@@ -1,0 +1,39 @@
+.screen6 {
+  .info-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__item {
+      width: 150px;
+      text-align: center;
+    }
+
+    &__icon, &__icon img, &__icon:hover, &__icon img:hover {
+      transition: .5s;
+    }
+
+    &__icon {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: var(--color-yellow-light);
+      margin-bottom: 8px;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover {
+        background-color: var(--color-yellow-dark);
+        img {
+          transform: translate(-50%, -50%) scale(1.3);
+        }
+      }
+    }
+  }
+}

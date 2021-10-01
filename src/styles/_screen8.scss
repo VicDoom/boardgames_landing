@@ -1,0 +1,12 @@
+.screen8 {
+  &__title {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  &__reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
