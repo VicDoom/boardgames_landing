@@ -1,0 +1,58 @@
+.screen9 {
+  &__title {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  &__map-wrapper {
+    padding-bottom: 40px;
+  }
+
+  &__button {
+    padding-bottom: 45px;
+    text-align: center;
+
+    .button {
+      padding: 19px 29px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__whatsapp, &__phone, &__email {
+    .contact {
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        color: var(--color-pink);
+        padding-left: 60px;
+      }
+
+      &__body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      &__text {
+        padding-bottom: 5px;
+      }
+
+      &__subtext {
+        color: var(--color-pink);
+        text-align: right;
+        text-decoration: underline var(--color-pink);
+        transform: translateY(-10px);
+      }
+
+      &__logo {
+        padding-right: 10px;
+      }
+    }
+  }
+}

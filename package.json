@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp dev",
@@ -34,5 +35,8 @@
     "browser-sync": "^2.26.13",
     "autoprefixer": "^10.0.2",
     "cssnano": "^4.1.10"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }
