@@ -33,8 +33,10 @@
         </h2>
     </div>
     <div class="screen1__button">
-        <div class="button">
-            Вызовите специалиста бесплатно
+        <div class="button button--open-modal">
+            <a href="#openModal">
+                Вызовите специалиста бесплатно
+            </a>
         </div>
     </div>
     <div class="screen1__text text">
@@ -338,7 +340,23 @@
         </div>
     </div>
 </div>
+    <div id="openModal" class="modal">
+    <div class="modal__logo">
+        <img src="../images/logo1.svg" alt="">
+    </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form action="#">
+                    <input class="modal__input" type="text" placeholder="+7 (XXX) XXX-XX-XX">
+                    <input class="button modal__button" type="submit" value="Закажите обратный звонок">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
     <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
