@@ -24,3 +24,9 @@
     color: var(--color-yellow-dark);
   }
 }
+
+@media screen and (max-width: 1350px) {
+  .card {
+    padding: 30px 15px;
+  }
+}

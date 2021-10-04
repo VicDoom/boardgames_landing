@@ -100,6 +100,12 @@
     display: block;
     float: left;
     margin-left: 8%;
+
+    @media screen and (max-width: 1350px) {
+      & {
+        display: none;
+      }
+    }
   }
 
   #slide1:checked~ &__prev-next-control label:nth-child(5)::after,
@@ -140,6 +146,12 @@
     display: block;
     float: right;
     margin-right: 8%;
+
+    @media screen and (max-width: 1350px) {
+      & {
+        display: none;
+      }
+    }
   }
 
   #slide1:checked~&__prev-next-control label:nth-child(2)::after,
@@ -157,5 +169,14 @@
   #slide4:checked~&__dot-control label:nth-child(4),
   #slide5:checked~&__dot-control label:nth-child(5) {
     background: var(--color-yellow-dark);
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .screen3 {
+
+    &__dot-control {
+      margin-bottom: 25px;
+    }
   }
 }
