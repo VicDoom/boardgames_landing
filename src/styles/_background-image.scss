@@ -11,3 +11,10 @@
   background: url("../images/screen2background.svg") no-repeat;
   background-size: 100%; /* Современные браузеры */
 }
+
+@media screen and (max-width: 1350px) {
+  .background__image {
+    background-size: auto;
+    background-position: top right;
+  }
+}

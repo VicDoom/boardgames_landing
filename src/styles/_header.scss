@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
 
-  &--menu {
+  &__menu {
     transform: translateY(-20%);
     display: flex;
 
@@ -43,8 +43,23 @@
       }
     }
   }
+}
 
-  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+@media screen and (max-width: 1350px){
+  .header {
+    flex-direction: column;
 
+    &__logo {
+      padding-bottom: 50px;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__contacts {
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

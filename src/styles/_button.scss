@@ -5,6 +5,8 @@
   background-color: var(--color-yellow-dark);
   transition: .5s;
 
+  font-weight: 700;
+
   &:hover {
     cursor: pointer;
     background-color: var(--color-yellow-light);
