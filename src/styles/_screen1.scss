@@ -24,8 +24,10 @@
   &__background-bottom {
     position: relative;
     top: 5px;
-    padding: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
   }
 }
 
@@ -69,8 +71,7 @@
     }
 
     &__background-bottom {
-      width: 120%;
-      left: -50px;
+      right: 20px;
     }
   }
 }

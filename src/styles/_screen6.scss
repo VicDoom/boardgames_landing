@@ -37,3 +37,35 @@
     }
   }
 }
+
+@media screen and (max-width: 1350px){
+  .screen6 {
+    .info-blocks {
+      flex-direction: column;
+
+      &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
+      }
+
+      &__icon {
+        width: 120px;
+        height: 120px;
+
+        margin-right: 20px;
+
+        img {
+          height: 55%;
+        }
+      }
+
+      &__text {
+        width: 190px;
+      }
+    }
+  }
+}

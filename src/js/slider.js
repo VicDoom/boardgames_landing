@@ -38,9 +38,34 @@ $(document).ready(function () {
         waitForAnimate: true,
         responsive: [
             {
-                breakpoint: 1400,
+                breakpoint: 1350,
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
+                    speed: 1500,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                }
+            }
+        ]
+    });
+
+    $('.screen8__slider').slick({
+        slidesToShow: 2,
+        speed: 500,
+        easing: "cubic-bezier(0.77, 0, 0.175, 1)",
+        infinite: false,
+        draggable: false,
+        waitForAnimate: true,
+        responsive: [
+            {
+                breakpoint: 1350,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    speed: 1500,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
                 }
             }
         ]

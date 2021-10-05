@@ -1,91 +1,3 @@
-//.screen7 {
-//  background-color: var(--color-white-dark);
-//
-//  &__slider {
-//    max-width: 100em;
-//    margin: 0 auto;
-//    position: relative;
-//  }
-//
-//  &__wrapper {
-//    overflow: hidden;
-//    width: 100%;
-//    border-radius: 5px;
-//    transform: translateZ(0);
-//    transition: all .5s ease-out;
-//
-//    .inner {
-//      width: fit-content;
-//      position: relative;
-//      display: flex;
-//      flex-direction: row;
-//      flex: 1 1 auto;
-//    }
-//  }
-//
-//  &__nav {
-//    &-left, &-right {
-//      position: absolute;
-//      top: 50%;
-//      transform: translateY(-50%);
-//      transition: .5s;
-//
-//      &:hover {
-//        transition: .5s;
-//        transform: scale(1.3) translateY(-40%);
-//      }
-//    }
-//
-//    &-left {
-//      left: 5%;
-//    }
-//
-//    &-right {
-//      right: 5%;
-//    }
-//  }
-//
-//  &__slide {
-//    display: inline-block;
-//    width: 500px;
-//    height: 400px;
-//    position: relative;
-//    margin: 0 5em;
-//    &--1 {
-//      background-color: var(--color-pink);
-//      margin-left: 10em;
-//    }
-//    &--2 {
-//      background-color: var(--color-yellow-dark);
-//    }
-//    &--3 {
-//      background-color: var(--color-yellow-light);
-//    }
-//    &--4 {
-//      background-color: var(--color-black-neutral);
-//      margin-right: 10em;
-//    }
-//  }
-//
-//  &__prev-next-control {
-//    height: 50px;
-//    position: absolute;
-//    top: 50%;
-//    width: 100%;
-//    transform: translateY(-50%);
-//
-//    label {
-//      transition: 1s;
-//
-//      &:hover {
-//        transform: scale(2);
-//        transition: 1s;
-//      }
-//    }
-//  }
-//}
-
-
 .screen7 {
 
   min-width: 0;
@@ -162,7 +74,7 @@
     }
 
     &.slick-disabled {
-      transform: none;
+      transform: translateY(-50%);
     }
   }
 
@@ -190,5 +102,55 @@
     text-align: center;
     margin: 0 auto;
     padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .screen7 {
+    &__title {
+      padding: 30px 2% 12px;
+      h1 {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+
+    &__slider {
+      .card {
+        width: 370px;
+        padding: 20px 15px;
+        box-sizing: border-box;
+
+        &__row {
+          &-attribute, &-data {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    &__text {
+      width: auto;
+      padding: 0 10px 30px;
+    }
+
+    &__slider {
+      padding-bottom: 20px;
+    }
+
+    .slick-arrow {
+      width: 18px;
+      height: 18px;
+    }
+
+    .slick-arrow.slick-next{
+      right: 2%;
+      background: url("../images/screen7_slider-arrow-right-small.svg") 0 0 / 100% repeat;
+    }
+
+    .slick-arrow.slick-prev{
+      left: 2%;
+      background: url("../images/screen7_slider-arrow-left-small.svg") 0 0 / 100% repeat;
+    }
   }
 }

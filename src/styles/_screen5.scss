@@ -12,3 +12,11 @@
     color: var(--color-pink);
   }
 }
+
+@media screen and (max-width: 1350px){
+  .screen5 {
+    &__arrow {
+      display: none;
+    }
+  }
+}
