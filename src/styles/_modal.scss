@@ -127,3 +127,16 @@
     transform: translateY(-150%);
   }
 }
+
+@media screen and (max-width: 1350px) {
+  .modal {
+    &__input, &__button {
+      width: 300px;
+      box-sizing: border-box;
+    }
+
+    &__button {
+      font-size: 18px;
+    }
+  }
+}

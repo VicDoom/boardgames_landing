@@ -28,14 +28,23 @@
     display: flex;
     justify-content: center;
     background-size: 100%;
+
+    img {
+      width: 100%
+    }
   }
 }
 
 @media screen and (max-width: 750px) {
   .screen1 {
 
+    &__title-and-subtitle, &__button, &__text {
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
     &__background-bottom  {
-      top: 10px;
+      //top: 10px;
     }
   }
 }
@@ -46,6 +55,9 @@
 
     &__title-and-subtitle {
       padding-bottom: 20px;
+      min-width: 350px;
+      width: auto;
+      margin: auto;
     }
 
     &__title {
@@ -65,13 +77,14 @@
     }
 
     &__text {
-      width: auto;
+      width: 350px;
+      margin: auto;
       font-size: 16px;
       line-height: 19px;
     }
 
     &__background-bottom {
-      right: 20px;
+      //right: 20px;
     }
   }
 }
