@@ -1,7 +1,7 @@
 .background__image {
   height: auto;
   background: url("../images/screen1group.png") no-repeat;
-  background-size: 100%; /* Современные браузеры */
+  background-size: 100%;
 }
 
 .background__image2 {
@@ -9,12 +9,12 @@
   position: relative;
   height: inherit;
   background: url("../images/screen2background.svg") no-repeat;
-  background-size: 100%; /* Современные браузеры */
+  background-size: 100%;
 }
 
 @media screen and (max-width: 1350px) {
   .background__image {
     background-size: auto;
-    background-position: top right;
+    background-position: 80% 5%;
   }
 }
