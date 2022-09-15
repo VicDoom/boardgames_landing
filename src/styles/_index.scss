@@ -1,4 +1,4 @@
-body, html, input {
+body, html, input, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', SansSerif, sans-serif;
@@ -15,8 +15,14 @@ h2 {
   line-height: 32px;
 }
 
+h5 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 h6 {
   font-size: 20px;
   font-weight: 700;
-  line-height: 700;
+  line-height: 24px;
 }

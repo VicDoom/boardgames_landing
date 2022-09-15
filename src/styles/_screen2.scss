@@ -1,0 +1,67 @@
+.screen2 {
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    padding: 15px 31px 31px;
+    box-sizing: border-box;
+    width: 255px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--white-color);
+    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+    transition: 0.5s;
+    border-radius: 9px;
+    &__top {
+      margin: auto;
+      img {
+        height: 160px;
+      }
+    }
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &-description {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        &-with-icon {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+        &-icon {
+          display: flex;
+          align-items: center;
+        }
+        &-without-icon {
+
+        }
+      }
+      &-title {
+        text-align: center;
+        padding: 0 5px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-price {
+        text-align: center;
+      }
+      &-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        & .button {
+          margin: 0 auto;
+        }
+      }
+    }
+    &:hover {
+      box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.25);
+    }
+  }
+}
