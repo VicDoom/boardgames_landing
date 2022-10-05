@@ -57,6 +57,7 @@
     }
     &-results {
       position: absolute;
+      z-index: 2;
       padding: 12px;
       background-color: var(--black-color);
       width: 400px;
@@ -64,11 +65,14 @@
         display: none;
       }
     }
-    &-item {
+    &-item, &-recent-item {
       padding: 5px 0;
       &--hidden {
         display: none;
       }
+    }
+    &-recent-item {
+      font-style: italic;
     }
   }
 
