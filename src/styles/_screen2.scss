@@ -7,16 +7,19 @@
     padding: 15px 31px 31px;
     box-sizing: border-box;
     width: 255px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    //display: grid;
+    //grid-template-rows: 1fr 1fr;
     background-color: var(--white-color);
     box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
     transition: 0.5s;
     border-radius: 9px;
     &__top {
       margin: auto;
+      height: 50%;
       img {
         height: 160px;
+        margin: 0 auto;
+        display: block;
       }
     }
     &__bottom {
