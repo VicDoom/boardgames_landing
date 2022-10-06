@@ -1,0 +1,26 @@
+.menu {
+  background-color: var(--gray-color);
+  &__container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 17px 0;
+  }
+
+  &__element {
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__marker {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background-color: var(--orange-color);
+    transition: 0.5s;
+    border-radius: 4px;
+  }
+}
